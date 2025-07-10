@@ -1,0 +1,33 @@
+.navbar-border-gradient {
+  padding-bottom: 2px;
+  background: linear-gradient(90deg, #5b6b76, #705c65, #526c75);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar-border-gradient.scrolled {
+  background: rgba(255, 255, 255, 0.2); /* transparent white */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.navbar {
+  background-color: transparent !important;
+  margin-bottom: 0;
+}
+
+.navbar-brand,
+.nav-link,
+.navbar-toggler {
+  color: #fff !important;
+  
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(18, 17, 17) !important;
+  transition: color 0.2s;
+  font-weight: bold;
+}

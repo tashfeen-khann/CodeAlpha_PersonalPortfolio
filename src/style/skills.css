@@ -1,0 +1,46 @@
+.skills-section {
+  padding: 4rem 2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #5b6b76, #705c65, #526c75, #b15db4, #2afadf);
+  z-index: 2;
+}
+
+.gradient-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg,#5b6b76, #705c65, #526c75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 4rem;
+  
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: left;
+  gap: 6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.skillIllustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px; /* or your preferred height */
+  width: 100%;
+}

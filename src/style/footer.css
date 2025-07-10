@@ -1,0 +1,35 @@
+.footer-section {
+  background: linear-gradient(90deg, #000000 0%, #040506 100%);
+  color: #fff;
+  padding: 2.5rem 1rem 1rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-desc {
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+.footer-icons a {
+  color: #fff;
+  margin: 0 1rem;
+  transition: color 0.2s;
+}
+
+.footer-icons a:hover {
+  color: #b15db4;
+}
+
+.footer-bottom {
+  margin-top: 1.5rem;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}

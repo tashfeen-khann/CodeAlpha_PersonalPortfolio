@@ -1,0 +1,78 @@
+.contact-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(90deg, #273843, #030303dc, #141616, #131213, #041d19);
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.contact-desc {
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  max-width: 420px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.7);
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(91, 107, 118, 0.25);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background: #181818;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+}
+
+.input-icon {
+  color: #b15db4;
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.7rem 0;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-btn {
+  background: linear-gradient(90deg, #5b6b76, #705c65, #526c75);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(90deg, #b15db4, #2afadf);
+}
+
+.form-error {
+  color: #ff6b6b;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  margin-left: 0.5rem;
+}

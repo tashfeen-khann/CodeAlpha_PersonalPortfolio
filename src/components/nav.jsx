@@ -34,9 +34,13 @@ const Nav = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/home">Home</a>
+              </li> */}
+               <li className="nav-item">
+                <Link className="nav-link" to="/#">Home</Link>
               </li>
+
               <li className="nav-item">
                 <Link className="nav-link" smooth to="/home#services">Services</Link>
               </li>
@@ -50,7 +54,7 @@ const Nav = () => {
                 <Link className="nav-link" smooth to="/home#about">About</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact</a>
+                <Link className="nav-link" smooth to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

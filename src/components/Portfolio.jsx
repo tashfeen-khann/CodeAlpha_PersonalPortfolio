@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import algocraft from '../assets/imgs/algocraft.png';
-import event from '../assets/imgs/event.png';
+import event from '../assets/imgs/Event.png';
 import ecommerce from '../assets/imgs/ecommerce.png';
 import portfolio from '../assets/imgs/portfolio.png';
 import bakery from '../assets/imgs/bakery.png';

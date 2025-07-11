@@ -3,7 +3,14 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, #5b6b76, #705c65, #526c75, #b15db4, #2afadf);
+  background: linear-gradient(
+    90deg,
+    #5b6b76,
+    #705c65,
+    #526c75,
+    #b15db4,
+    #2afadf
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -75,8 +82,8 @@
 .box img {
   width: 100%;
   height: 100%;
-  object-fit: contain;   /* Ensures the whole image is visible, may add letterbox bars */
+  object-fit: contain; /* Ensures the whole image is visible, may add letterbox bars */
   border-radius: 6px;
   display: block;
-  background: #fff;      /* Optional: background for letterbox/pillarbox effect */
+  background: #fff; /* Optional: background for letterbox/pillarbox effect */
 }

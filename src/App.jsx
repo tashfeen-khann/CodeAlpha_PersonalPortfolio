@@ -8,12 +8,12 @@ function App() {
   return (
     <Router>
       <Nav />
-     <Routes>
-  <Route path="/home" element={<Home />} />
-  <Route path="/contact" element={<Contact />} />
-  <Route path="/" element={<Home />} />
-<Route path="/algocraft" element={<Algocraft/>} />
-</Routes>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/algocraft" element={<Algocraft />} />
+      </Routes>
       <Footer />
     </Router>
   )

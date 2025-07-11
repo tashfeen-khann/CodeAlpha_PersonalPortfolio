@@ -46,13 +46,27 @@ const Portfolio = () => {
               </div>
             );
 
-            // If it's the first project (Algocraft), wrap with Link
+            // Add links for Algocraft (idx === 0) and Event (idx === 2)
             return (
               <div className="col-md-6 col-lg-4 mt-5" key={idx}>
                 {idx === 0 ? (
-                  <Link to="https://algo-craft-amber.vercel.app/" style={{ textDecoration: 'none' }}>
+                  <a
+                    href="https://algo-craft-amber.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
                     {cardContent}
-                  </Link>
+                  </a>
+                ) : idx === 2 ? (
+                  <a
+                    href="https://event-websitee.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    {cardContent}
+                  </a>
                 ) : (
                   cardContent
                 )}

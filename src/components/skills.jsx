@@ -26,7 +26,7 @@ const Skills = () => {
                 <FaWordpressSimple color='#21759b' size={40} />
                 <SiD3Dotjs color='orange' size={40} />
                 <SiVite color='orange' size={40} />
-                <SiCanva size={40} color="#07B9CE"/>
+                <SiCanva size={40} color="#07B9CE" />
               </div>
             </div>
           </div>

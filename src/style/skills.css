@@ -15,19 +15,25 @@
   bottom: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #5b6b76, #705c65, #526c75, #b15db4, #2afadf);
+  background: linear-gradient(
+    90deg,
+    #5b6b76,
+    #705c65,
+    #526c75,
+    #b15db4,
+    #2afadf
+  );
   z-index: 2;
 }
 
 .gradient-heading {
   font-size: 2.5rem;
   font-weight: bold;
-  background: linear-gradient(90deg,#5b6b76, #705c65, #526c75);
+  background: linear-gradient(90deg, #5b6b76, #705c65, #526c75);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 4rem;
-  
 }
 
 .skills-icons {

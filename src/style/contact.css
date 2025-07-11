@@ -1,6 +1,13 @@
 .contact-section {
   padding: 4rem 2rem;
-  background: linear-gradient(90deg, #273843, #030303dc, #141616, #131213, #041d19);
+  background: linear-gradient(
+    90deg,
+    #273843,
+    #030303dc,
+    #141616,
+    #131213,
+    #041d19
+  );
   color: #fff;
   text-align: center;
   min-height: 100vh;
@@ -14,7 +21,7 @@
 .contact-form {
   max-width: 420px;
   margin: 0 auto;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 2rem 2rem 1.5rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 24px 0 rgba(91, 107, 118, 0.25);

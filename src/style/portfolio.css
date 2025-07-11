@@ -1,7 +1,6 @@
 .portfolio-card {
-
   background-color: black;
-   border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 2rem;
   border-radius: 1rem;
   backdrop-filter: blur(10px);
@@ -23,13 +22,12 @@
   background-color: black;
   position: relative;
   overflow: hidden;
-  background-image:
-     linear-gradient(
-    to top,
-    rgba(0,0,0,0.4) 0%,
-    rgb(0, 0, 0) 1000%
-  ),
-    url('../assets/blackkk.avif'); /* <-- update path */
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgb(0, 0, 0) 1000%
+    ),
+    url("../assets/blackkk.avif"); /* <-- update path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

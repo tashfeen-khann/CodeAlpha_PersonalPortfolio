@@ -11,12 +11,12 @@ const About = () => {
             Hi, I'm <span style={{ color: ' rgb(132, 110, 133)', fontWeight: 'bold' }}>Tashfeen</span>, I’m a passionate Front-End Developer with hands-on experience in building responsive and user-friendly web pages using React.js. I specialize in creating clean, modern UI designs and have worked on multiple web projects, ensuring both functionality and aesthetic appeal.
 
 
- </p>
+          </p>
           <p className="about-text" style={{ fontSize: '1.15rem', color: '#e0e0e0' }}>
-         In addition to my React expertise, I have  knowledge of SEO , WordPress customization, and graphic design tools like Canva, allowing me to deliver well-rounded digital solutions that perform and look great.
+            In addition to my React expertise, I have  knowledge of SEO , WordPress customization, and graphic design tools like Canva, allowing me to deliver well-rounded digital solutions that perform and look great.
 
-Whether it's building from scratch or enhancing existing platforms, I enjoy turning ideas into interactive, engaging web experiences.
- </p>
+            Whether it's building from scratch or enhancing existing platforms, I enjoy turning ideas into interactive, engaging web experiences.
+          </p>
         </div>
       </div>
     </section>

@@ -45,8 +45,8 @@ const Nav = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" smooth to="/home#portfolio">Portfolio</Link>
-              </li>         
-             <li className="nav-item">
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" smooth to="/home#about">About</Link>
               </li>
               <li className="nav-item">

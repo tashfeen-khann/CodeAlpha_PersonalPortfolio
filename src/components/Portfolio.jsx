@@ -46,7 +46,6 @@ const Portfolio = () => {
               </div>
             );
 
-            // Add links for Algocraft (idx === 0) and Event (idx === 2)
             return (
               <div className="col-md-6 col-lg-4 mt-5" key={idx}>
                 {idx === 0 ? (
@@ -61,6 +60,15 @@ const Portfolio = () => {
                 ) : idx === 2 ? (
                   <a
                     href="https://event-websitee.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    {cardContent}
+                  </a>
+                ) : idx === 4 ? (
+                  <a
+                    href="https://agencyportfolio-two.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ textDecoration: 'none' }}

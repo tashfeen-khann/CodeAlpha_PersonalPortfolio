@@ -5,7 +5,7 @@ import ecommerce from '../assets/imgs/ecommerce.png';
 import portfolio from '../assets/imgs/portfolio.png';
 import bakery from '../assets/imgs/bakery.png';
 import '../style/portfolio.css';
-// import ecommerceVideo from '../assets/video/ecommerce.mp4';
+import ecm from '../assets/video/erpcom.mp4';
 import bk from '../assets/video/bakery.mp4';
 
 const projects = [
@@ -61,11 +61,11 @@ const Portfolio = () => {
                     {cardContent}
                   </a>
                 )
-                //  : idx === 1 ? (
-                //   <div onClick={() => setVideoSrc(ecommerceVideo)} style={{ cursor: 'pointer' }}>
-                //     {cardContent}
-                //   </div>
-                // )
+                 : idx === 1 ? (
+                  <div onClick={() => setVideoSrc(ecm)} style={{ cursor: 'pointer' }}>
+                    {cardContent}
+                  </div>
+                )
                  : idx === 2 ? (
                   <a
                     href="https://event-websitee.vercel.app/"

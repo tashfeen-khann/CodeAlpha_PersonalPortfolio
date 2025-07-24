@@ -24,14 +24,32 @@ const Contact = () => {
     setErrors({ ...errors, [e.target.name]: undefined });
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    if (validate()) {
-      // Submit logic here
-      alert("Message sent!");
-      setForm({ name: '', email: '', message: '' });
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (validate()) {
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        alert("Message sent!");
+        setForm({ name: '', email: '', message: '' });
+      } else {
+alert(`Error: ${data.error}`);
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong. Please try again later.");
     }
-  };
+  }
+};
+
 
   return (
     <section className="contact-section mt-5">

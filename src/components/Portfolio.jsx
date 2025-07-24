@@ -1,11 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import algocraft from '../assets/imgs/algocraft.png';
 import event from '../assets/imgs/Event.png';
 import ecommerce from '../assets/imgs/ecommerce.png';
 import portfolio from '../assets/imgs/portfolio.png';
 import bakery from '../assets/imgs/bakery.png';
 import '../style/portfolio.css';
+// import ecommerceVideo from '../assets/video/ecommerce.mp4';
+// import bakeryVideo from '../assets/video/bakery.mp4';
+
 const projects = [
   {
     img: algocraft,
@@ -13,13 +15,12 @@ const projects = [
   },
   {
     img: ecommerce,
-    desc: "E-commerce site built with React & API integration, Cart &  login functionality.",
+    desc: "E-commerce site built with React & API integration, Cart & login functionality.",
   },
   {
     img: event,
     desc: "A responsive Event Management site showcasing Events work.",
   },
-
   {
     img: bakery,
     desc: "Helloween themed bakery website with a modern design and responsive layout.",
@@ -31,8 +32,10 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  // const [videoSrc, setVideoSrc] = useState(null);
+
   return (
-    <section className="portfolio-section" >
+    <section className="portfolio-section">
       <h2 className="gradient-heading mb-5" style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Portfolio</h2>
       <div className="container">
         <div className="row justify-content-center g-4">
@@ -40,7 +43,7 @@ const Portfolio = () => {
             const cardContent = (
               <div className="h-100 text-white border-2 portfolio-card">
                 <img src={project.img} className="card-img-top" alt={`Project ${idx + 1}`} />
-                <div className="card-body mt-3 ">
+                <div className="card-body mt-3">
                   <p className="card-text">{project.desc}</p>
                 </div>
               </div>
@@ -57,7 +60,13 @@ const Portfolio = () => {
                   >
                     {cardContent}
                   </a>
-                ) : idx === 2 ? (
+                )
+                //  : idx === 1 ? (
+                //   <div onClick={() => setVideoSrc(ecommerceVideo)} style={{ cursor: 'pointer' }}>
+                //     {cardContent}
+                //   </div>
+                // )
+                 : idx === 2 ? (
                   <a
                     href="https://event-websitee.vercel.app/"
                     target="_blank"
@@ -66,7 +75,13 @@ const Portfolio = () => {
                   >
                     {cardContent}
                   </a>
-                ) : idx === 4 ? (
+                ) 
+                // : idx === 3 ? (
+                //   <div onClick={() => setVideoSrc(bakeryVideo)} style={{ cursor: 'pointer' }}>
+                //     {cardContent}
+                //   </div>
+                // )
+                 : idx === 4 ? (
                   <a
                     href="https://agencyportfolio-two.vercel.app/"
                     target="_blank"
@@ -84,9 +99,17 @@ const Portfolio = () => {
         </div>
       </div>
 
-
-
-
+      {/* Video Overlay */}
+      {/* {videoSrc && (
+        <div className="video-overlay" onClick={() => setVideoSrc(null)}>
+          <button className="close-btn" onClick={() => setVideoSrc(null)}>×</button>
+          <video
+            src={videoSrc}
+            controls
+            autoPlay
+          />
+        </div>
+      )} */}
 
       <div style={{
         position: "absolute",
@@ -97,10 +120,8 @@ const Portfolio = () => {
         background: "linear-gradient(90deg, #5b6b76, #705c65, #526c75, #b15db4, #2afadf)",
         zIndex: 2
       }} />
-
-
     </section>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

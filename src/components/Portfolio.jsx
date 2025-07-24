@@ -6,7 +6,7 @@ import portfolio from '../assets/imgs/portfolio.png';
 import bakery from '../assets/imgs/bakery.png';
 import '../style/portfolio.css';
 // import ecommerceVideo from '../assets/video/ecommerce.mp4';
-// import bakeryVideo from '../assets/video/bakery.mp4';
+import bk from '../assets/video/bakery.mp4';
 
 const projects = [
   {
@@ -32,7 +32,7 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  // const [videoSrc, setVideoSrc] = useState(null);
+  const [videoSrc, setVideoSrc] = useState(null);
 
   return (
     <section className="portfolio-section">
@@ -76,11 +76,11 @@ const Portfolio = () => {
                     {cardContent}
                   </a>
                 ) 
-                // : idx === 3 ? (
-                //   <div onClick={() => setVideoSrc(bakeryVideo)} style={{ cursor: 'pointer' }}>
-                //     {cardContent}
-                //   </div>
-                // )
+                : idx === 3 ? (
+                  <div onClick={() => setVideoSrc(bk)} style={{ cursor: 'pointer' }}>
+                    {cardContent}
+                  </div>
+                )
                  : idx === 4 ? (
                   <a
                     href="https://agencyportfolio-two.vercel.app/"
@@ -100,7 +100,7 @@ const Portfolio = () => {
       </div>
 
       {/* Video Overlay */}
-      {/* {videoSrc && (
+      {videoSrc && (
         <div className="video-overlay" onClick={() => setVideoSrc(null)}>
           <button className="close-btn" onClick={() => setVideoSrc(null)}>×</button>
           <video
@@ -109,7 +109,7 @@ const Portfolio = () => {
             autoPlay
           />
         </div>
-      )} */}
+      )}
 
       <div style={{
         position: "absolute",

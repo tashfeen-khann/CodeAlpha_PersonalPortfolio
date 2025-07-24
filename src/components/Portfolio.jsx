@@ -5,8 +5,8 @@ import ecommerce from '../assets/imgs/ecommerce.png';
 import portfolio from '../assets/imgs/portfolio.png';
 import bakery from '../assets/imgs/bakery.png';
 import '../style/portfolio.css';
-import ecm from '../assets/video/erpcom.mp4';
-import bk from '../assets/video/bakery.mp4';
+// import ecm from '../assets/video/erpcom.mp4';
+import bk from '../assets/video/bakeryy.mp4';
 
 const projects = [
   {
@@ -62,7 +62,7 @@ const Portfolio = () => {
                   </a>
                 )
                  : idx === 1 ? (
-                  <div onClick={() => setVideoSrc(ecm)} style={{ cursor: 'pointer' }}>
+                  <div onClick={() => setVideoSrc(bk)} style={{ cursor: 'pointer' }}>
                     {cardContent}
                   </div>
                 )
